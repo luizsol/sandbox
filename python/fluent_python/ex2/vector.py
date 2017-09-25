@@ -1,5 +1,6 @@
 from math import hypot
 
+
 class Vector(object):
     def __init__(self, x=0, y=0):
         self.x = x
@@ -20,5 +21,4 @@ class Vector(object):
         return Vector(x, y)
 
     def __mul__(self, scalar):
-        return Vector(self.x *  scalar, self.y * scalar)
-
+        return Vector(self.x * scalar, self.y * scalar)
