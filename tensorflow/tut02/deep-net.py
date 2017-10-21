@@ -190,6 +190,8 @@ def train_neural_network(data_placeholder, label_placeholder):
                 # The next_batch returns a list containing both the data and
                 # the real output
                 batch_x, batch_y = mnist.train.next_batch(batch_size)
+                # print('Shape batch x:', batch_x.shape) -> (100, 784)
+                # print('Shape batch y:', batch_y.shape) -> (100, 10)
                 '''
                 The Session.run() method  runs one "step" of TensorFlow
                 computation, by running the necessary graph fragment to execute
